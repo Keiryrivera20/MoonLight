@@ -1,0 +1,307 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif; 
+}
+.logo{
+	width: 200px;
+	height: 75px;
+}
+.contenedor{
+	width: 100%;
+	margin: auto;
+}
+
+/*-----HEADER-----*/
+.header {
+	height: 70px;
+	background:#000;
+}
+.header .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	color: #fff;
+}
+.icon-menu {
+	display:block;
+	width: 50px;
+	height: 50px;
+	font-size: 3px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.nav {
+	position: absolute;
+	top: 70px;
+	left: -100%;
+	width: 100%;
+	transition: all 0.5s;
+	z-index: 100;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 60px; 
+}
+.menu__link {
+	display: block;
+	padding: 25px;
+	background: #000;
+	text-decoration: none;
+	color: #fff; 
+	height: 70px;
+	border-bottom: 1px solid #fff;
+}
+.menu__link:hover {
+  background: white;
+  color: #000;   
+}
+.muestrate{
+ 	left: 0;
+}
+
+/*-----BANNER-----*/
+.banner img{
+	width: 100%;
+}
+.banner {
+	position: relative;
+		
+}
+.banner .contenedor{
+	position: absolute;
+   top:50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   width: 100%;
+   color: #000;
+   text-align: center;
+}
+
+/*----- PROMOCIONES ------*/
+.prom_title{
+	font-family: 'Abril Fatface', cursive;
+	background-color: #6ea56d;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%230e550d' fill-opacity='0.4' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E");
+}
+.prom_title h3{
+   font-family: 'Noto Sans KR', sans-serif;
+}
+.promos{
+   font-family: 'Noto Sans KR', sans-serif;
+	background-color: #c2cac2;
+	text-align: center;
+	margin-top:-5px;
+}
+.promo__img{
+   font-family: 'Noto Sans KR', sans-serif;
+	position: relative;
+	float:left;
+	justify-content:space-between;
+}	
+.promos img{	
+	border-radius:10%;
+}
+.promo__titulo{
+	margin-top: 20px; 
+	padding: 0;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.promo_text h3{
+	font-family: 'Abril Fatface', cursive;
+}
+
+.promo_text{
+	background-color:#FADBD8;
+	margin:auto;
+	position: relative;
+   font-family: 'Noto Sans KR', sans-serif;
+	justify-content:space-between;
+	border-radius:10%;
+	font-size: 16px;
+	width:70%;
+}
+#panel{
+	display: none;
+}
+#panel1{
+	display: none;
+}
+
+/*-----FOOTER-----*/
+footer{
+	font-family:sans-serif;
+    width: 100%;
+    background: #202020;
+    color: white;   
+}
+
+.container-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: block;
+    justify-content: space-between;
+}
+.container-body h1{
+	 margin-top: 15px;
+}
+
+
+.columna1{
+    max-width: 400px;
+}
+
+.columna1 h1{
+    font-size: 22px;
+}
+
+.columna1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.columna2{
+    max-width: 400px;
+    
+}
+
+.columna2 h1{
+    font-size: 22px;
+}
+
+.icon{
+    margin-top: 10px;
+    display: flex;
+}
+
+.icon img{
+    width: 36px;
+    height: 50px;
+}
+
+.icon label{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.contacto img{
+    width: 36px;
+    height: 50px;
+}
+
+.contacto label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+/*-----RESPONSIVE-----*/
+@media(min-width:80px){
+	.contenedor .banner__titulo{
+		font-size: 24px;
+		font-family: 'Aclonica', sans-serif;
+	}
+}
+@media(min-width:480px){
+	.contenedor .banner__titulo{
+		font-size: 44px;
+		font-family: 'Aclonica', sans-serif;
+	}
+	.promo__columna{
+		width: 30%;
+	}
+	.promos .contenedor{
+		display: flex;
+		justify-content: space-between;
+	}
+	.promos h1{
+		font-size: 40px;
+	}
+	.promos h2{
+		font-size: 30px;
+	}
+	.container-body{
+    display: flex;
+    justify-content: space-between;
+	}
+	.conteiner-all{
+		 width: 100%;
+		 margin: auto;
+		 padding: 40px;
+	}
+}		
+@media(min-width:1024px){
+	.nav {
+		position: static;
+		width: auto;
+	}
+	.menu {
+		display: flex;
+	}
+	.icon-menu {
+		display: none;
+	}
+	.menu__link{
+		border: none;
+	}
+	.banner .contenedor .banner__titulo{
+		font-size: 60px;
+		font-family: 'Aclonica', sans-serif;  
+	}
+	.contenedor{
+		width:1000px;
+	}
+}
+
+@media(min-width:1280px){
+	.contenedor{
+		width: 1200px;
+	}
+	.banner .contenedor .banner__titulo{
+		font-size: 120px;
+		font-family: 'Aclonica', sans-serif;
+	}
+}

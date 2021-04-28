@@ -1,0 +1,306 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif; 
+}
+.logo{
+	width: 200px;
+	height: 75px;
+}
+.contenedor{
+	width: 100%;
+	margin: auto;
+}
+
+/*-----Header-----*/
+.header {
+	height: 70px;
+	background:#000;
+}
+.header .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	color: #fff;
+}
+.icon-menu {
+	display:block;
+	width: 50px;
+	height: 50px;
+	font-size: 3px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.nav {
+	position: absolute;
+	top: 70px;
+	left: -100%;
+	width: 100%;
+	transition: all 0.5s;
+	z-index: 100;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 60px; 
+}
+.menu__link {
+	display: block;
+	padding: 25px;
+	background: #000;
+	text-decoration: none;
+	color: #fff; 
+	height: 70px;
+	border-bottom: 1px solid #fff;
+}
+.menu__link:hover {
+  background: white;
+  color: #000;   
+}
+.muestrate{
+ 	left: 0;
+}
+
+/*-----Banner-----*/
+.banner img{
+	width: 100%;
+	height: 50%;
+}
+.banner {
+	position: relative;
+		
+}
+.banner .contenedor{
+	position: absolute;
+   top:50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   width: 100%;
+   color: #000;
+   text-align: center;
+}
+/*----- PROMOCIONES ------*/
+.prom_title{
+	font-family: 'Abril Fatface', cursive;
+	background-color: #fdfcff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%230085ab' fill-opacity='0.5'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.prom_title h3{
+   font-family: 'Noto Sans KR', sans-serif;
+}
+.promos{
+   font-family: 'Noto Sans KR', sans-serif;
+	background-color: #c2cac2;
+	text-align: center;
+	margin-top:-5px;
+}
+.promo__img{
+   font-family: 'Noto Sans KR', sans-serif;
+	position: relative;
+	float:left;
+	justify-content:space-between;
+}	
+.promos img{	
+	border-radius:10%;
+}
+.promo__titulo{
+	margin-top: 20px; 
+	padding: 0;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.promo_text h3{
+	font-family: 'Abril Fatface', cursive;
+}
+
+.promo_text{
+	background-color:#FADBD8;
+	margin:auto;
+	position: relative;
+   font-family: 'Noto Sans KR', sans-serif;
+	justify-content:space-between;
+	border-radius:10%;
+	font-size: 16px;
+	width:70%;
+}
+#panel{
+	display: none;
+}
+#panel1{
+	display: none;
+}
+/*--------Estilos del footer--------*/
+footer{
+	font-family:sans-serif;
+    width: 100%;
+    background: #202020;
+    color: white;   
+}
+
+.container-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: block;
+    justify-content: space-between;
+}
+.container-body h1{
+	 margin-top: 15px;
+}
+
+.columna1{
+    max-width: 400px;
+}
+
+.columna1 h1{
+    font-size: 22px;
+}
+
+.columna1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.columna2{
+    max-width: 400px;
+    
+}
+
+.columna2 h1{
+    font-size: 22px;
+}
+
+.icon{
+    margin-top: 10px;
+    display: flex;
+}
+
+.icon img{
+    width: 36px;
+    height: 50px;
+}
+
+.icon label{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.contacto img{
+    width: 36px;
+    height: 50px;
+}
+
+.contacto label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+/*-----RESPONSIVE-----*/
+@media(min-width:80px){
+	.contenedor .banner__titulo{
+		font-size: 24px;
+		font-family: 'Aclonica', sans-serif;
+	}
+}
+@media(min-width:480px){
+	.contenedor .banner__titulo{
+		font-size: 44px;
+		font-family: 'Aclonica', sans-serif;
+	}
+	.promo__columna{
+		width: 30%;
+	}
+	.promos .contenedor{
+		display: flex;
+		justify-content: space-between;
+	}
+	.promos h1{
+		font-size: 40px;
+	}
+	.promos h2{
+		font-size: 30px;
+	}
+	.container-body{
+    display: flex;
+    justify-content: space-between;
+	}
+	.conteiner-all{
+		 width: 100%;
+		 margin: auto;
+		 padding: 40px;
+	}
+}		
+@media(min-width:1024px){
+	.nav {
+		position: static;
+		width: auto;
+	}
+	.menu {
+		display: flex;
+	}
+	.icon-menu {
+		display: none;
+	}
+	.menu__link{
+		border: none;
+	}
+	.banner .contenedor .banner__titulo{
+		font-size: 60px;
+		font-family: 'Aclonica', sans-serif;  
+	}
+	.contenedor{
+		width:1000px;
+	}
+}
+
+@media(min-width:1280px){
+	.contenedor{
+		width: 1200px;
+	}
+	.banner .contenedor .banner__titulo{
+		font-size: 120px;
+		font-family: 'Aclonica', sans-serif;
+	}
+}

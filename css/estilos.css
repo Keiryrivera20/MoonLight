@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif; 
+}
+
+.main img{
+	max-width: 80%;
+}
+.logo{
+	width: 200px;
+	height: 75px;
+}
+.contenedor{
+	width: 100%;
+	margin: auto;
+}
+
+.banner h1 {
+    text-shadow: 4px 4px #ffa932;
+  } 
+
+/*---------Estilos del Header---------------*/
+.header {
+	height: 70px;
+	background: #000;
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.logo, .icon-menu {
+  color: #fff;
+}
+.icon-menu {
+	display:block;
+	width: 50px;
+	height: 50px;
+	font-size: 3px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.nav {
+	position: absolute;
+	top: 70px;
+	left: -100%;
+	width: 100%;
+	transition: all 0.5s;
+	z-index: 100;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 60px; 
+}
+.menu__link {
+  display: block;
+  padding: 25px;
+  background: #000;
+  text-decoration: none;
+  color: #fff; 
+  height: 70px;
+  border-bottom: 1px solid #fff;
+}
+.menu__link:hover {
+  background: white;
+  color: #000;  
+}
+.muestrate{
+  left: 0;
+}
+
+
+/*-------Estilos del Banner-----*/
+.banner img{
+  width: 100%;
+   
+}
+.banner {
+  position: relative;
+		
+}
+.banner .contenedor{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #000;
+    text-align: center;
+		
+}
+/*-------Estilos de Info------*/
+ .info{
+    background: rgb(231, 124, 114);
+    color: #fff;
+    text-align: center;
+    margin-top: -45px; 
+    font-family: 'Lobster', cursive;
+	 list-style: none;
+	 text-decoration: none;
+    
+}
+ .info__img{
+   border-radius: 50%;
+   border: 7px solid #fff; 
+	position: relative;
+   font-family: 'Lobster', cursive;
+	justify-content:space-between;
+	transition: transform .5s;
+    
+}
+.info img:hover{
+	transform: scale(1.1)
+}
+.info__txt{
+    text-align: justify;
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+}
+ul{
+	list-style: none;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+}
+/*-------- Estilos de Platos--------*/
+.platos{
+    background: #fcd4b5; 
+    color: #000;  
+    text-align: center;
+    padding: 15px;
+}
+.platos h3{
+    font-size: 30px;
+}
+.platos .platos__titulo{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.platos .platos__txt{
+    text-align: justify;
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+}
+.platos__img{
+	border-radius: 50%;
+	border: 7px solid #fff; 
+	transition:transform .5s
+}
+.platos img:hover{
+transform: scale(1.1)
+}
+/*---------- Estilos del  Mapa----------*/
+.mapa {
+    padding: 0;
+    background: #F0EDE5;
+    text-align: center;
+}
+.mapa h3{
+    font-size: 25px;
+}
+.mapa p{
+    text-align: justify;
+	
+}
+/*--------Estilos del footer--------*/
+footer{
+	font-family:sans-serif;
+    width: 100%;
+    background: #202020;
+    color: white;   
+}
+
+.container-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: block;
+    justify-content: space-between;
+}
+.container-body h1{
+	 margin-top: 15px;
+}
+
+.columna1{
+    max-width: 400px;
+}
+
+.columna1 h1{
+    font-size: 22px;
+}
+
+.columna1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.columna2{
+    max-width: 400px;
+    
+}
+
+.columna2 h1{
+    font-size: 22px;
+}
+
+.icon{
+    margin-top: 10px;
+    display: flex;
+}
+
+.icon img{
+    width: 36px;
+    height: 50px;
+}
+
+.icon label{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.contacto img{
+    width: 36px;
+    height: 50px;
+}
+
+.contacto label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+/*--------Estilos Responsive--------*/
+@media(min-width:480px){
+    .main img{
+    max-width: 90%;
+}
+    .contenedor .banner__titulo{
+        font-size: 44px;
+        font-family: 'Lobster', cursive;
+    }
+    .contenedor .banner__txt{
+        font-size: 25px;  
+        font-family: 'Lobster', cursive; 
+    }
+	.info__columna{
+        width: 32%;
+    }
+     .info .contenedor{
+    display: flex;
+		 justify-content: space-between;
+		 
+    }
+    
+    .platos .contenedor{  
+     display: flex; 
+     flex-wrap: wrap;
+     justify-content:space-around;
+}
+    .platos__columna{
+        width:  40%;
+    }
+    .platos h3{
+        font-size: 50px;
+        font-family: 'Lobster', cursive;
+    }
+	 .container-body{
+    display: flex;
+    justify-content: space-between;
+	}
+	.conteiner-all{
+		 width: 100%;
+		 margin: auto;
+		 padding: 40px;
+	}
+}
+
+@media(min-width:768px){
+      .platos__columna{
+        width: 24%; 
+    } 
+}
+
+@media(min-width:1024px){
+	.nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+	.menu__link{
+		border: none;
+	}
+    .banner .contenedor .banner__titulo{
+        font-size: 50px;  
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 36px; 
+        font-family: 'Lobster', cursive;
+    }
+    .contenedor{
+        width:1000px;
+    }
+   
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+     .banner .contenedor .banner__titulo{
+        font-size: 90px;
+        font-family: 'Lobster', cursive;
+         
+		
+    }
+     .banner .contenedor .banner__txt{
+        font-size: 46px; 
+        font-family: 'Lobster', cursive;
+    }
+}
